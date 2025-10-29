@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import logo from "@/assets/logo.jpg";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -9,7 +10,7 @@ const Navbar = () => {
     { href: "#como-funciona", label: "Como Funciona" },
     { href: "#cursos", label: "Cursos" },
     { href: "#contato", label: "Contato" },
-    { href: "#sobre", label: "Sobre Nós" },
+    { href: "/sobre-nos", label: "Sobre Nós" },
   ];
 
   return (
@@ -17,10 +18,8 @@ const Navbar = () => {
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
-          <a href="#" className="flex items-center space-x-2">
-            <div className="text-2xl font-bold text-gradient-primary">
-              Amontada Valley
-            </div>
+          <a href="/" className="flex items-center space-x-2">
+            <img src={logo} alt="Amontada Valley" className="h-10 w-auto" />
           </a>
 
           {/* Desktop Navigation */}
