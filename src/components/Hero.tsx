@@ -70,8 +70,15 @@ const Hero = () => {
       </div>
 
       {/* Decorative gradient orbs */}
-      <div className="absolute top-1/4 left-10 w-72 h-72 bg-primary/20 rounded-full blur-3xl animate-pulse" />
-      <div className="absolute bottom-1/4 right-10 w-72 h-72 bg-secondary/20 rounded-full blur-3xl animate-pulse delay-1000" />
+      <div className="absolute top-1/4 left-10 w-72 h-72 bg-primary/20 rounded-full blur-3xl animate-pulse shadow-glow" />
+      <div className="absolute bottom-1/4 right-10 w-72 h-72 bg-secondary/20 rounded-full blur-3xl animate-pulse delay-1000 shadow-glow" />
+      
+      {/* Scroll indicator */}
+      <div className="absolute bottom-8 left-1/2 -translate-x-1/2 animate-bounce">
+        <div className="w-6 h-10 border-2 border-primary/50 rounded-full flex items-start justify-center p-2">
+          <div className="w-1 h-2 bg-primary rounded-full animate-pulse" />
+        </div>
+      </div>
     </section>
   );
 };

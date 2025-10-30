@@ -46,13 +46,14 @@ const Pillars = () => {
           {pillars.map((pillar, index) => (
             <Card
               key={index}
-              className="group hover:shadow-xl transition-all duration-300 hover:-translate-y-2 border-2 hover:border-primary/50"
+              className="group hover:shadow-glow transition-all duration-300 hover:-translate-y-2 border-2 hover:border-primary/50 bg-gradient-to-br from-card to-card/50"
+              style={{ animationDelay: `${index * 100}ms` }}
             >
               <CardContent className="p-6 space-y-4">
-                <div className={`inline-flex p-4 rounded-lg bg-gradient-primary ${pillar.color}`}>
+                <div className="inline-flex p-4 rounded-lg bg-gradient-primary group-hover:scale-110 group-hover:rotate-3 transition-all duration-300 shadow-lg">
                   <pillar.icon className="h-8 w-8 text-primary-foreground" />
                 </div>
-                <h3 className="text-xl font-bold">{pillar.title}</h3>
+                <h3 className="text-xl font-bold group-hover:text-primary transition-colors">{pillar.title}</h3>
                 <p className="text-muted-foreground">{pillar.description}</p>
               </CardContent>
             </Card>

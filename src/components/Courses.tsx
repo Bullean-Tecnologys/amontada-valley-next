@@ -101,10 +101,10 @@ const Courses = () => {
             <Card
               key={course.id}
               className={cn(
-                "border-2 transition-all duration-300 cursor-pointer",
+                "border-2 transition-all duration-300 cursor-pointer hover:-translate-y-1",
                 expandedCourse === course.id
-                  ? "border-primary shadow-xl"
-                  : "border-border hover:border-primary/50"
+                  ? "border-primary shadow-glow scale-[1.02]"
+                  : "border-border hover:border-primary/50 hover:shadow-xl"
               )}
               onClick={() => toggleCourse(course.id)}
             >

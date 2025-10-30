@@ -1,10 +1,20 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import logo from "@/assets/logo.png";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const [scrolled, setScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setScrolled(window.scrollY > 50);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
 
   const navLinks = [
     { href: "#como-funciona", label: "Como Funciona" },
@@ -14,12 +24,16 @@ const Navbar = () => {
   ];
 
   return (
-    <nav className="fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-lg border-b border-border">
+    <nav className={`fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-lg border-b border-border transition-all duration-300 ${scrolled ? 'shadow-lg' : ''}`}>
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
-          <a href="/" className="flex items-center space-x-2">
-            <img src={logo} alt="Amontada Valley" className="h-10 w-auto" />
+          <a href="/" className="flex items-center space-x-2 group">
+            <img 
+              src={logo} 
+              alt="Amontada Valley" 
+              className={`transition-all duration-300 ${scrolled ? 'h-12' : 'h-10'} w-auto group-hover:scale-105`}
+            />
           </a>
 
           {/* Desktop Navigation */}

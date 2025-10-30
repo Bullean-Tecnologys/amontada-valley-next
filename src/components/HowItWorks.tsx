@@ -40,12 +40,16 @@ const HowItWorks = () => {
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
           {features.map((feature, index) => (
-            <Card key={index} className="border-2 hover:border-primary/50 transition-smooth">
+            <Card 
+              key={index} 
+              className="border-2 hover:border-primary/50 transition-all duration-300 hover:-translate-y-2 hover:shadow-glow group"
+              style={{ animationDelay: `${index * 100}ms` }}
+            >
               <CardContent className="p-6 text-center space-y-4">
-                <div className="inline-flex p-4 rounded-full bg-gradient-primary">
+                <div className="inline-flex p-4 rounded-full bg-gradient-primary group-hover:scale-110 transition-transform duration-300 shadow-lg">
                   <feature.icon className="h-8 w-8 text-primary-foreground" />
                 </div>
-                <h3 className="text-lg font-bold">{feature.title}</h3>
+                <h3 className="text-lg font-bold group-hover:text-primary transition-colors">{feature.title}</h3>
                 <p className="text-muted-foreground text-sm">{feature.description}</p>
               </CardContent>
             </Card>
