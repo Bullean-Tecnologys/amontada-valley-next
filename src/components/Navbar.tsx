@@ -19,6 +19,7 @@ const Navbar = () => {
   const navLinks = [
     { href: "#como-funciona", label: "Como Funciona" },
     { href: "#cursos", label: "Cursos" },
+    { href: "/projetos", label: "Projetos" },
     { href: "#contato", label: "Contato" },
     { href: "/sobre-nos", label: "Sobre Nós" },
   ];
