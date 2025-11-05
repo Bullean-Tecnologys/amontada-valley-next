@@ -40,15 +40,19 @@ const Hero = () => {
             que conectam diretamente ao mercado de trabalho.
           </p>
 
-          <div className="flex flex-col sm:flex-row items-center justify-center gap-4 pt-4">
-            <Button asChild size="xl" variant="hero">
-              <a href="#inscreva-se" className="group">
-                Inscreva-se Agora
-                <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
+          <div className="flex flex-col sm:flex-row items-center justify-center gap-4 pt-4 ">
+            <Button asChild size="xl" variant="outline">
+              <a href="#inscreva-se" className="group" >
+                Inscreva-se agora
+                <ArrowRight className="h-5 ml-2 w-5 mt-1 group-hover:translate-x-1 transition-transform" />
               </a>
             </Button>
-            <Button asChild size="xl" variant="outline">
-              <a href="#cursos">Conheça os Cursos</a>
+            <Button asChild size="xl" variant="orange_outline">
+              <a href="#cursos">
+                Conheça os cursos
+                <ArrowRight className="h-5 w-5 mt-1 group-hover:translate-x-1 transition-transform" />
+              </a>
+    
             </Button>
           </div>
 

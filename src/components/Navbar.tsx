@@ -48,7 +48,7 @@ const Navbar = () => {
                 {link.label}
               </a>
             ))}
-            <Button asChild size="lg" variant="hero">
+            <Button asChild size="lg" variant="outline">
               <a href="#inscreva-se">Inscreva-se</a>
             </Button>
           </div>
