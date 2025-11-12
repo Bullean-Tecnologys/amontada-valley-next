@@ -5,13 +5,14 @@ import heroBg from "@/assets/hero-bg.jpg";
 const Hero = () => {
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
-      {/* Background Image with Overlay */}
+      
       <div 
         className="absolute inset-0 z-0"
         style={{
           backgroundImage: `url(${heroBg})`,
           backgroundSize: 'cover',
           backgroundPosition: 'center',
+          
         }}
       >
         <div className="absolute inset-0 bg-gradient-to-r from-background/95 via-background/85 to-background/95" />
@@ -29,9 +30,9 @@ const Hero = () => {
           </div>
 
           <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold leading-tight">
-            Venha Construir Seu{" "}
+            venha construir seu{" "}
             <span className="text-gradient-primary">Futuro</span>{" "}
-            Com A Gente!
+            com a gente!
           </h1>
 
           <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto">

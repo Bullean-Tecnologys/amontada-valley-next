@@ -28,7 +28,7 @@ const Navbar = () => {
     <nav className={`fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-lg border-b border-border transition-all duration-300 ${scrolled ? 'shadow-lg' : ''}`}>
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-16">
-          {/* Logo */}
+          
           <a href="/" className="flex items-center space-x-2 group">
             <img 
               src={logo} 
