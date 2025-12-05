@@ -12,7 +12,7 @@ const Enrollment = () => {
 
   return (
     <section className="py-20 bg-gradient-hero" id="inscreva-se">
-      <div className="container px-4 mx-auto">
+      <div className="container px-4 max-w-6xl">
         <div className="text-center mb-16 text-primary-foreground">
           <h2 className="text-3xl md:text-5xl font-bold mb-4">
             Inscreva-se Agora no Edital de Seleção 2025
