@@ -1,7 +1,13 @@
 import { useState } from "react";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { ChevronDown, Code, Palette, Database, CheckCircle2 } from "lucide-react";
+import {
+  ChevronDown,
+  Code,
+  Palette,
+  Database,
+  CheckCircle2,
+} from "lucide-react";
 import { cn } from "@/lib/utils";
 
 const courses = [
@@ -91,12 +97,12 @@ const Courses = () => {
             Nossos <span className="text-gradient-primary">Cursos</span>
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Escolha o curso ideal para sua carreira em tecnologia. 
-            Todos com 600 horas de formação e metodologia prática.
+            Escolha o curso ideal para sua carreira em tecnologia. Todos com 600
+            horas de formação e metodologia prática.
           </p>
         </div>
 
-        <div className="max-w-5xl mx-auto space-y-6">
+        <div className="max-w-6xl mx-auto px-4 space-y-6">
           {courses.map((course) => (
             <Card
               key={course.id}
@@ -122,7 +128,9 @@ const Courses = () => {
                       <course.icon className="h-8 w-8 text-primary-foreground" />
                     </div>
                     <div>
-                      <CardTitle className="text-2xl mb-2">{course.title}</CardTitle>
+                      <CardTitle className="text-2xl mb-2">
+                        {course.title}
+                      </CardTitle>
                       <p className="text-muted-foreground">{course.subtitle}</p>
                     </div>
                   </div>
@@ -144,7 +152,9 @@ const Courses = () => {
                   <p className="text-muted-foreground">{course.description}</p>
 
                   <div>
-                    <h4 className="font-bold text-lg mb-3">Habilidades Adquiridas</h4>
+                    <h4 className="font-bold text-lg mb-3">
+                      Habilidades Adquiridas
+                    </h4>
                     <ul className="space-y-2">
                       {course.skills.map((skill, index) => (
                         <li key={index} className="flex items-start gap-2">
@@ -175,7 +185,12 @@ const Courses = () => {
                   </div>
 
                   <div className="pt-4">
-                    <Button asChild size="lg" variant="hero" className="w-full md:w-auto">
+                    <Button
+                      asChild
+                      size="lg"
+                      variant="hero"
+                      className="w-full md:w-auto"
+                    >
                       <a href="#inscreva-se">Inscreva-se Neste Curso</a>
                     </Button>
                   </div>
@@ -185,27 +200,40 @@ const Courses = () => {
           ))}
         </div>
 
-        <div className="mt-12 text-center">
-          <Card className="max-w-3xl mx-auto border-2 border-primary/50">
+        <div className="max-w-6xl mx-auto px-4 mt-12">
+          <Card className="border-2 border-primary/50">
             <CardContent className="p-8">
-              <h3 className="text-2xl font-bold mb-4">Formação Soft Skills</h3>
-              <p className="text-muted-foreground mb-6">
-                30% da carga horária total focada no desenvolvimento das suas Soft Skills, 
-                incluindo Inglês Técnico, Formação Comportamental e Vivências com palestras, 
-                mentorias e Bootcamps.
+              <h3 className="text-2xl font-bold mb-4 text-center">Formação Soft Skills</h3>
+              <p className="text-muted-foreground mb-6  text-center">
+                30% da carga horária total focada no desenvolvimento das suas
+                Soft Skills, incluindo Inglês Técnico, Formação Comportamental e
+                Vivências com palestras, mentorias e Bootcamps.
               </p>
+
               <div className="grid grid-cols-1 md:grid-cols-3 gap-4 text-sm">
                 <div className="p-4 bg-muted rounded-lg">
-                  <div className="font-bold text-lg text-primary mb-1">9h/semana</div>
-                  <div className="text-muted-foreground">Inglês Técnico</div>
+                  <div className="font-bold text-lg text-primary mb-1 text-center">
+                    9h/semana
+                  </div>
+                  <div className="text-muted-foreground text-center">Inglês Técnico</div>
                 </div>
+
                 <div className="p-4 bg-muted rounded-lg">
-                  <div className="font-bold text-lg text-secondary mb-1">4h/semana</div>
-                  <div className="text-muted-foreground">Formação Comportamental</div>
+                  <div className="font-bold text-lg text-secondary mb-1 text-center">
+                    4h/semana
+                  </div>
+                  <div className="text-muted-foreground text-center">
+                    Formação Comportamental
+                  </div>
                 </div>
+
                 <div className="p-4 bg-muted rounded-lg">
-                  <div className="font-bold text-lg text-primary mb-1">2h/semana</div>
-                  <div className="text-muted-foreground">Vivências e Mentorias</div>
+                  <div className="font-bold text-lg text-primary mb-1 text-center">
+                    2h/semana
+                  </div>
+                  <div className="text-muted-foreground text-center">
+                    Vivências e Mentorias
+                  </div>
                 </div>
               </div>
             </CardContent>
