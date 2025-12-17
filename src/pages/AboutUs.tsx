@@ -3,52 +3,68 @@ import { InfiniteMovingCardsDemo } from "@/components/ui/MovingLogos";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 
+
+
+import cleofas from "@/assets/Cleofas.webp";
+import kaka from "@/assets/Kaka.webp";
+import pedro from "@/assets/Pedro.webp";
+import humberto from "@/assets/Humberto.webp";
+import abraao from "@/assets/Abraao.webp";
+import holanda from "@/assets/Holanda.webp";
+import rafael from "@/assets/Rafael.webp";
+import gabriella from "@/assets/gabriella.webp";
+import luis from "@/assets/Luis.webp";
+
+// Outros
+import amontadaImg from "@/assets/Amontada.webp";
+import deusmar from "@/assets/Deusmar.webp";
+
 const AboutUs = () => {
   const team = [
     {
       name: "Cleofas Queirós",
       role: "Administrador",
-      image: "src/assets/Cleofas.jpeg",
+      image: cleofas,
     },
     {
       name: "Kaká Queirós",
       role: "Diretor Executivo Dupar",
-      image: "src/assets/Kaka.jpg",
+      image: kaka,
     },
     {
       name: "Pedro Praxedes",
       role: "Conselheiro - L' Auto Cargo",
-      image: "src/assets/Pedro.jpg",
+      image: pedro,
     },
     {
       name: "Humberto Lima e Silva",
       role: "Diretor Executivo Ninna",
-      image: "src/assets/Humberto.jpeg",
+      image: humberto,
     },
     {
       name: "Prof. Abraão Saraiva Jr.",
       role: "Professor e Coordenador de Empreendedorismo da UFC",
-      image: "src/assets/Abraao.jpeg",
+      image: abraao,
     },
     {
       name: "Holanda Junior",
       role: "Diretor Executivo Dupar",
-      image: "src/assets/Holanda.jpeg",
+      image: holanda,
     },
     {
       name: "Rafael Nascimento",
       role: "CEO Inovation IT",
-      image: "src/assets/Rafael.png",
+      image: rafael,
     },
     {
       name: "Gabriella Purcaru",
       role: "Head of Startup",
-      image: "src/assets/gabriella.jpg",
+      image: gabriella,
     },
     {
       name: "Luis Felipe Oliveira",
       role: "Coordenador Amontada Valley",
-      image: "src/assets/Luis.jpg",
+      image: luis,
     },
   ];
 
@@ -99,7 +115,7 @@ const AboutUs = () => {
             <div className="grid grid-cols-1 md:grid-cols-2 max-h-2xl gap-10 items-top max-w-7xl items-center">
               <div className="flex justify-center">
                 <img
-                  src="src/assets/Amontada.jpeg"
+                  src={amontadaImg}
                   alt="Amontada"
                   className="rounded-2xl shadow-lg w-full max-w-lg transition-transform duration-300 hover:scale-105"
                 />
@@ -138,7 +154,7 @@ const AboutUs = () => {
             <Card className="border-primary/20 shadow-lg rounded-2xl transition-transform duration-300 hover:scale-105 max-h-lg">
               <CardContent className="p-8 flex flex-col md:flex-row items-center gap-8">
                 <img
-                  src="src/assets/Deusmar.jpeg"
+                  src={deusmar}
                   alt="Deusmar Queirós"
                   className="w-44 h-44 rounded-full object-cover shadow-lg"
                 />
