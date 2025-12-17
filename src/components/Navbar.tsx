@@ -1,13 +1,27 @@
-import { useState, useEffect } from "react";
+import { useEffect, useState } from "react";
 import { useLocation } from "react-router-dom";
 import { Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import logo from "@/assets/logo.png";
 
+const NAV_LINKS = [
+  { href: "/#como-funciona", label: "Como Funciona" },
+  { href: "/#cursos", label: "Cursos" },
+  { href: "/projetos", label: "Projetos" },
+  { href: "/#contato", label: "Contato" },
+  { href: "/sobre-nos", label: "Sobre Nós" },
+];
+
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
-  const location = useLocation();
+  const { pathname } = useLocation();
+
+  const isHome = pathname === "/" || pathname === "";
+
+  const visibleLinks = isHome
+    ? NAV_LINKS
+    : NAV_LINKS.filter((link) => !link.href.includes("#"));
 
   useEffect(() => {
     const handleScroll = () => setScrolled(window.scrollY > 50);
@@ -15,21 +29,8 @@ const Navbar = () => {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  const navLinks = [
-    { href: "/#como-funciona", label: "Como Funciona" },
-    { href: "/#cursos", label: "Cursos" },
-    { href: "/projetos", label: "Projetos" },
-    { href: "/#contato", label: "Contato" },
-    { href: "/sobre-nos", label: "Sobre Nós" },
-  ];
-
-  
-  const isHome = location.pathname === "/" || location.pathname === "";
-
-  
-  const visibleLinks = isHome
-    ? navLinks
-    : navLinks.filter((link) => !link.href.includes("#"));
+  const toggleMenu = () => setIsOpen((prev) => !prev);
+  const closeMenu = () => setIsOpen(false);
 
   return (
     <nav
@@ -38,48 +39,42 @@ const Navbar = () => {
       }`}
     >
       <div className="container mx-auto px-4">
-        <div className="flex items-center justify-between h-16">
-          
-          <a href="/" className="flex items-center space-x-2 group">
+        <div className="flex h-16 items-center justify-between">
+          {/* Logo */}
+          <a href="/" className="group flex items-center">
             <img
               src={logo}
               alt="Amontada Valley"
-              className={`transition-all duration-300  ${
+              className={`w-auto transition-all duration-300 group-hover:scale-105 ${
                 scrolled ? "h-12" : "h-11"
-              } w-auto group-hover:scale-105`}
+              }`}
             />
           </a>
 
-          
+          {/* Desktop menu */}
           <div className="hidden md:flex items-center space-x-8">
             {visibleLinks.map((link) => (
               <a
                 key={link.href}
                 href={link.href}
-                className="text-foreground/80 hover:text-primary transition-all duration-300 font-medium"
+                className="font-medium text-foreground/80 transition-colors duration-300 hover:text-primary"
               >
                 {link.label}
               </a>
             ))}
 
-            
-            {isHome ? (
-              <Button asChild size="lg" variant="outline">
-                <a href="https://forms.gle/4k8Wa2p6yCuwZ7PU9">Inscreva-se</a>
-              </Button>
-            ) : (
-              
+            {!isHome && (
               <Button asChild size="lg" variant="outline">
                 <a href="/">Início</a>
               </Button>
             )}
           </div>
 
-          
+          {/* Mobile toggle */}
           <button
-            className="md:hidden p-2"
-            onClick={() => setIsOpen(!isOpen)}
+            onClick={toggleMenu}
             aria-label="Toggle menu"
+            className="md:hidden p-2"
           >
             {isOpen ? (
               <X className="h-6 w-6 text-foreground" />
@@ -89,31 +84,29 @@ const Navbar = () => {
           </button>
         </div>
 
-        
+        {/* Mobile menu */}
         {isOpen && (
-          <div className="md:hidden py-4 space-y-4 border-t border-border">
+          <div className="md:hidden space-y-4 border-t border-border py-4">
             {visibleLinks.map((link) => (
               <a
                 key={link.href}
                 href={link.href}
-                className="block py-2 text-foreground/80 hover:text-primary transition-all duration-300 font-medium"
-                onClick={() => setIsOpen(false)}
+                onClick={closeMenu}
+                className="block py-2 font-medium text-foreground/80 transition-colors duration-300 hover:text-primary"
               >
                 {link.label}
               </a>
             ))}
 
-            {isHome ? (
-              <Button asChild size="lg" variant="hero" className="w-full">
-                <a href="https://forms.gle/4k8Wa2p6yCuwZ7PU9" onClick={() => setIsOpen(false)}>
-                  Inscreva-se
-                </a>
-              </Button>
-            ) : (
-              <Button asChild size="lg" variant="hero" className="w-full">
-                <a href="/" onClick={() => setIsOpen(false)}>
-                  Home
-                </a>
+            {!isHome && (
+              <Button
+                asChild
+                size="lg"
+                variant="hero"
+                className="w-full"
+                onClick={closeMenu}
+              >
+                <a href="/">Home</a>
               </Button>
             )}
           </div>
