@@ -170,3 +170,25 @@ All colors MUST be HSL.
     box-shadow: 0 0 20px hsl(var(--primary) / 0.5);
   }
 }
+  @keyframes scroll {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(-50%);
+    }
+  }
+
+  .animate-scroll {
+    animation: scroll
+      var(--animation-duration, 40s)
+      linear
+      infinite
+      var(--animation-direction, forwards);
+  }
+
+  /* Pause on hover helper */
+  .pause-animation {
+    animation-play-state: paused;
+  }
+
