@@ -3,11 +3,11 @@ import { MapPin, Mail, Phone } from "lucide-react";
 
 const Contact = () => {
   return (
-    <section className="py-20" id="contato">
+    <section className="py-20 bg-muted/30" id="contato">
       <div className="container px-4 mx-auto">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-5xl font-bold mb-4">
-            Entre em <span className="text-gradient-primary">Contato</span>
+            Entre em <span className="text-gradient-primary">contato</span>
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
             Tem dúvidas? Estamos aqui para ajudar! Entre em contato conosco.

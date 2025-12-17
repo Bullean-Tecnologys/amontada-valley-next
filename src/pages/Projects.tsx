@@ -24,11 +24,20 @@ const Projects = () => {
           ]
         },
         {
+          
           id: 2,
           name: "Squad 02",
           deployUrl: "https://plataforma-inovacao-squad02-front-e.vercel.app",
-          credentials: []
-        },
+          credentials: [
+            { role: "Administrador Geral", email: "admin@system.com", password: "admin123" },
+            { role: "Gestor de Empresa", email: "gestor.empresa@uorak.com", password: "12345678!" },
+            { role: "Gestor de Startup", email: "gestor.startup@uorak.com", password: "12345678!" },
+            { role: "Avaliador", email: "avaliador.empresa@uorak.com", password: "12345678!" },
+            { role: "Comum", email: "comum.empresa@uorak.com", password: "12345678!" }
+          ]
+        }
+
+        ,
         {
           id: 3,
           name: "Squad 03",
