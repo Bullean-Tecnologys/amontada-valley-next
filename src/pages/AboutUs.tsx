@@ -12,7 +12,7 @@ import humberto from "@/assets/Humberto.webp";
 import abraao from "@/assets/Abraao.webp";
 import holanda from "@/assets/Holanda.webp";
 import rafael from "@/assets/Rafael.webp";
-import gabriella from "@/assets/gabriella.webp";
+import gabriella from "@/assets/Gabriella.webp";
 import luis from "@/assets/Luis.webp";
 
 // Outros
