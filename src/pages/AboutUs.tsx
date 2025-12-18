@@ -148,7 +148,7 @@ const AboutUs = () => {
         <section className="py-20 bg-gradient-subtle">
           <div className="container mx-auto px-6 max-w-6xl">
             <h2 className="text-4xl md:text-5xl  mt-10 mb-6 text-gradient-primary text-center">
-              O Fundador
+              O fundador
             </h2>
 
             <Card className="border-primary/20 shadow-lg rounded-2xl transition-transform duration-300 hover:scale-105 max-h-lg">
@@ -178,7 +178,7 @@ const AboutUs = () => {
         <section className="mb-5">
           <div className="container mx-auto px-6 max-w-6xl">
             <h2 className="text-4xl md:text-5xl mt-10 mb-10 text-[#FF4000] text-center ">
-              Equipe Formadora
+              Equipe formadora
             </h2>
 
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
