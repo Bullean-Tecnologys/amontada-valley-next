@@ -15,7 +15,7 @@ const Enrollment = () => {
       <div className="container px-4 max-w-6xl">
         <div className="text-center mb-16 text-primary-foreground">
           <h2 className="text-3xl md:text-5xl font-bold mb-4">
-            Inscreva-se Agora no Edital de Seleção 2025
+            Inscreva-se agora no edital de seleção 2025
           </h2>
           <p className="text-lg max-w-2xl mx-auto text-primary-foreground/90">
             Não perca a oportunidade de transformar sua carreira. 
@@ -46,18 +46,18 @@ const Enrollment = () => {
               rel="noopener noreferrer"
               className="group"
             >
-              Ver Edital 2025
+              Ver edital 2025
               <FileText className="ml-2 h-5 w-5" />
             </a>
           </Button>
-          <Button asChild size="xl" className="bg-secondary text-secondary-foreground hover:bg-secondary-dark shadow-xl">
+          <Button asChild size="xl" className="bg-[#FF4000] text-secondary-foreground hover:bg-secondary-dark shadow-xl">
             <a 
               href="https://forms.gle/4k8Wa2p6yCuwZ7PU9" 
               target="_blank" 
               rel="noopener noreferrer"
               className="group"
             >
-              Inscreva-se Agora
+              Inscreva-se agora
               <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
             </a>
           </Button>
