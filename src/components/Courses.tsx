@@ -94,7 +94,7 @@ const Courses = () => {
       <div className="container px-4 mx-auto">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-5xl font-bold mb-4">
-            Nossos <span className="text-gradient-primary">Cursos</span>
+            Nossos <span className="text-gradient-primary">cursos</span>
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
             Escolha o curso ideal para sua carreira em tecnologia. Todos com 600
@@ -122,7 +122,7 @@ const Courses = () => {
                         "p-3 rounded-lg",
                         course.color === "primary"
                           ? "bg-gradient-primary"
-                          : "bg-gradient-secondary"
+                          : "bg-[#FF4000]"
                       )}
                     >
                       <course.icon className="h-8 w-8 text-primary-foreground" />

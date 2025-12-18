@@ -76,7 +76,7 @@ const AboutUs = () => {
         <section className="py-21 bg-gradient-subtle">
           <div className="container mx-auto px-6 text-center">
             <div className="mt-10 px-2">
-              <h1 className="text-4xl md:text-5xl font-extrabold mb-6 text-gradient-primary pb-2">
+              <h1 className="text-4xl md:text-5xl mb-6 text-gradient-primary pb-2">
                 A Amontada Valley
               </h1>
 
@@ -108,7 +108,7 @@ const AboutUs = () => {
 
         <section>
           <div className="container mx-auto px-6 ">
-            <h2 className="text-4xl md:text-5xl font-extrabold mt-10 mb-6 text-center text-[#FF4000] py-6">
+            <h2 className="text-4xl md:text-5xl  mt-10 mb-6 text-center text-[#FF4000] py-6">
               A Cidade de Amontada
             </h2>
 
@@ -147,7 +147,7 @@ const AboutUs = () => {
 
         <section className="py-20 bg-gradient-subtle">
           <div className="container mx-auto px-6 max-w-6xl">
-            <h2 className="text-4xl md:text-5xl font-extrabold mt-10 mb-6 text-gradient-primary text-center">
+            <h2 className="text-4xl md:text-5xl  mt-10 mb-6 text-gradient-primary text-center">
               O Fundador
             </h2>
 
@@ -177,7 +177,7 @@ const AboutUs = () => {
 
         <section className="mb-5">
           <div className="container mx-auto px-6 max-w-6xl">
-            <h2 className="text-4xl md:text-5xl font-extrabold mt-10 mb-10 text-[#FF4000] text-center ">
+            <h2 className="text-4xl md:text-5xl mt-10 mb-10 text-[#FF4000] text-center ">
               Equipe Formadora
             </h2>
 
@@ -208,7 +208,7 @@ const AboutUs = () => {
           </div>
         </section>
 
-        <h2 className="text-4xl md:text-5xl font-extrabold mt-20 mb-15 text-gradient-primary text-center ">
+        <h2 className="text-4xl md:text-5xl mt-20 mb-15 text-gradient-primary text-center ">
           Nossos colaboradores
         </h2>
 
@@ -218,7 +218,7 @@ const AboutUs = () => {
 
         <section className="py-20 bg-gradient-subtle text-center">
           <div className="container mx-auto px-6">
-            <h2 className="text-4xl md:text-5xl font-extrabold mb-15 text-[#FF4000] text-center ">
+            <h2 className="text-4xl md:text-5xl mb-15 text-[#FF4000] text-center ">
               Endereço
             </h2>
             <p className="text-lg text-foreground/80 mt-5">
