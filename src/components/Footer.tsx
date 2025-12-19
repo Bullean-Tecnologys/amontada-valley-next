@@ -33,26 +33,7 @@ const Footer = () => {
             </ul>
           </div>
 
-          <div>
-            <h4 className="font-bold mb-4">Cursos</h4>
-            <ul className="space-y-2 text-sm">
-              <li>
-                <a href="#cursos" className="text-muted-foreground hover:text-primary transition-smooth">
-                  Back-End
-                </a>
-              </li>
-              <li>
-                <a href="#cursos" className="text-muted-foreground hover:text-primary transition-smooth">
-                  Front-End
-                </a>
-              </li>
-              <li>
-                <a href="#cursos" className="text-muted-foreground hover:text-primary transition-smooth">
-                  Data Science
-                </a>
-              </li>
-            </ul>
-          </div>
+
 
           <div>
             <h4 className="font-bold mb-4">Contato</h4>
@@ -64,7 +45,7 @@ const Footer = () => {
                 </a>
               </li>
               <li>
-                <a href="tel:+5588981653871" className="hover:text-primary transition-smooth">
+                <a href="https://wa.me/5588981653871" className="hover:text-primary transition-smooth">
                   +55 (88) 98165-3871
                 </a>
               </li>

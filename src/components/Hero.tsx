@@ -63,7 +63,7 @@ const Hero = () => {
               <div className="text-muted-foreground">de formação</div>
             </div>
             <div className="text-center">
-              <div className="text-3xl font-bold text-gradient-secondary">8 meses</div>
+              <div className="text-3xl font-bold text-[#FF4000]">8 meses</div>
               <div className="text-muted-foreground">de duração</div>
             </div>
             <div className="text-center">

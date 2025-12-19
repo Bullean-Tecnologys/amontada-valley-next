@@ -1,82 +1,63 @@
 import { useState } from "react";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import {
-  ChevronDown,
-  Code,
-  Palette,
-  Database,
-  CheckCircle2,
-} from "lucide-react";
+import { ChevronDown, Code, ChartLine, Braces, CheckCircle2 } from "lucide-react";
 import { cn } from "@/lib/utils";
 
 const courses = [
   {
-    id: "backend",
-    icon: Database,
-    title: "Back-End",
-    subtitle: "Domine a parte invisível da web!",
-    description:
-      "Nosso curso de Back-End te capacitará a construir a estrutura sólida e eficiente que sustenta as aplicações web. Você aprenderá a gerenciar dados, integrar sistemas e garantir a segurança das informações.",
-    skills: [
-      "Desenvolvimento de Software",
-      "Bancos de dados relacionais e não relacionais",
-      "Documentação de requisitos e especificações",
-      "Criação de APIs",
-      "Regras de negócio para engenharia de software",
-    ],
-    technologies: [
-      "Linux",
-      "Docker",
-      "PostgreSQL",
-      "JavaScript, Node.js e TypeScript",
-      "NestJS",
-      "Git e GitHub",
-    ],
-    color: "primary",
-  },
-  {
-    id: "frontend",
-    icon: Palette,
-    title: "Front-End",
+    id: "FullStack",
+    icon: Braces,
+    title: "Full-Stack",
     subtitle: "Crie experiências digitais incríveis!",
     description:
-      "Neste curso, você aprenderá a desenvolver interfaces web intuitivas e atraentes, utilizando as tecnologias mais modernas. Prepare-se para construir aplicações web eficientes e prontas para integração com o back-end.",
+      "Neste curso, você aprenderá a desenvolver aplicações Full Stack completas, atuando tanto no front-end quanto no back-end, além de trabalhar com bancos de dados, APIs, autenticação, segurança e deploy.",
     skills: [
-      "Tecnologias para interfaces intuitivas e eficientes",
-      "Ciclo completo de desenvolvimento",
-      "Soluções personalizadas para negócios",
-      "Sites e apps com excelente UX",
-      "Segurança e desempenho de aplicações",
+      "Desenvolvimento de interfaces modernas e responsivas",
+      "Criação de APIs REST e integração com o front-end",
+      "Implementação de lógica de negócio no back-end",
+      "Manipulação de bancos de dados relacionais e não relacionais",
+      "Autenticação, autorização e segurança de aplicações",
+      "Versionamento de código e trabalho colaborativo",
+      "Integração entre front-end, back-end e banco de dados",
+      "Deploy e execução de aplicações em ambiente de produção",
     ],
     technologies: [
-      "Linux",
-      "Docker",
       "HTML, CSS e JavaScript",
-      "React.js com TypeScript",
       "Git e GitHub",
+      "React",
+      "TypeScript",
+      "Next.js",
+      "Node.js",
+      "APIs REST",
+      "PostgreSQL",
+      "Docker",
     ],
     color: "secondary",
   },
   {
-    id: "datascience",
-    icon: Code,
-    title: "Data Science",
+    id: "datasanalytics",
+    icon: ChartLine,
+    title: "Data Analytics",
     subtitle: "Transforme dados em conhecimento!",
     description:
       "Nosso curso de Data Science te equipará com as ferramentas e técnicas necessárias para extrair insights valiosos de grandes volumes de dados. Descubra como utilizar algoritmos de machine learning, estatística e visualização.",
     skills: [
-      "Coleta, limpeza e análise de dados",
-      "Algoritmos de machine learning",
-      "Comunicação através de dashboards e gráficos",
-      "Identificar oportunidades com dados",
+      "Coleta, organização e tratamento de dados",
+      "Análise exploratória de dados (EDA)",
+      "Criação de relatórios e dashboards interativos",
+      "Interpretação de métricas e indicadores (KPIs)",
+      "Análise de dados para apoio à tomada de decisão",
+      "Manipulação de bases de dados estruturadas", 
+      "Comunicação de resultados de forma clara e objetiva",
     ],
     technologies: [
       "Python",
-      "Pandas e NumPy",
-      "Scikit-learn",
-      "Power BI",
-      "Hadoop e Spark",
+      "Análise e visualização de dados",
+      "SQL",
+      "Web Scraping",
+      "Machine Learning",
+      "IA aplicada",
     ],
     color: "primary",
   },
@@ -191,7 +172,7 @@ const Courses = () => {
                       variant="hero"
                       className="w-full md:w-auto"
                     >
-                      <a href="#inscreva-se">Inscreva-se Neste Curso</a>
+                      <a href="#inscreva-se">Inscreva-se neste curso</a>
                     </Button>
                   </div>
                 </CardContent>
@@ -203,7 +184,9 @@ const Courses = () => {
         <div className="max-w-6xl mx-auto px-4 mt-12">
           <Card className="border-2 border-primary/50">
             <CardContent className="p-8">
-              <h3 className="text-2xl font-bold mb-4 text-center">Formação Soft Skills</h3>
+              <h3 className="text-2xl font-bold mb-4 text-center">
+                Formação Soft Skills
+              </h3>
               <p className="text-muted-foreground mb-6  text-center">
                 30% da carga horária total focada no desenvolvimento das suas
                 Soft Skills, incluindo Inglês Técnico, Formação Comportamental e
@@ -215,7 +198,9 @@ const Courses = () => {
                   <div className="font-bold text-lg text-primary mb-1 text-center">
                     9h/semana
                   </div>
-                  <div className="text-muted-foreground text-center">Inglês Técnico</div>
+                  <div className="text-muted-foreground text-center">
+                    Inglês Técnico
+                  </div>
                 </div>
 
                 <div className="p-4 bg-muted rounded-lg">
