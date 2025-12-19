@@ -51,7 +51,7 @@ const Contact = () => {
               </div>
               <h3 className="text-lg font-bold">Telefone</h3>
               <a 
-                href="tel:+5588981653871"
+                href="https://wa.me/5588981653871"
                 className="text-muted-foreground text-sm hover:text-primary transition-smooth block"
               >
                 +55 (88) 98165-3871

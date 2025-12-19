@@ -7,7 +7,7 @@ const HowItWorks = () => {
   const features = [
     { icon: Calendar, title: "8 Meses de Duração", description: "600 horas de formação completa" },
     { icon: BookOpen, title: "Metodologia Prática", description: "Baseada em desafios e projetos reais" },
-    { icon: UsersIcon, title: "Aulas Híbridas", description: "3 aulas remotas + 2 presenciais por semana" },
+    { icon: UsersIcon, title: "Aulas Híbridas", description: "4 aulas semanais (presenciais e remotas)" },
     { icon: Award, title: "Soft Skills", description: "30% focado no desenvolvimento pessoal" },
   ];
 

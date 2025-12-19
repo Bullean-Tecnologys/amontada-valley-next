@@ -190,23 +190,23 @@ const Projects = () => {
             <ol className="space-y-3 text-muted-foreground">
               <li className="flex gap-3">
                 <span className="font-bold text-primary">1.</span>
-                <span>Acesse o GitHub e faça login com o Google usando o email do Amontada Valley (amontadavalleytech@gmail.com)</span>
+                <span>Acesse o GitHub e faça login com o Google.</span>
               </li>
               <li className="flex gap-3">
                 <span className="font-bold text-primary">2.</span>
-                <span>Acesse o perfil GitHub Amontada Valley: github.com/amontadavalley</span>
+                <span>Acesse o perfil GitHub Amontada Valley: github.com/amontadavalley.</span>
               </li>
               <li className="flex gap-3">
                 <span className="font-bold text-primary">3.</span>
-                <span>No canto superior esquerdo, clique na foto de perfil e depois em "Organizations"</span>
+                <span>No canto superior esquerdo, clique na foto de perfil e depois em "Organizations".</span>
               </li>
               <li className="flex gap-3">
                 <span className="font-bold text-primary">4.</span>
-                <span>Clique na organização "Amontada-Valley-Codes"</span>
+                <span>Clique na organização "Amontada-Valley-Codes".</span>
               </li>
               <li className="flex gap-3">
                 <span className="font-bold text-primary">5.</span>
-                <span>Para visualizar todos os repositórios, clique na aba "Repositories"</span>
+                <span>Para visualizar todos os repositórios, clique na aba "Repositories".</span>
               </li>
             </ol>
           </CardContent>
