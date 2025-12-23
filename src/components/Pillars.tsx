@@ -36,7 +36,7 @@ const Pillars = () => {
         
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-5xl font-bold mb-4">
-            Nossos <span className="text-[#FF4000]">pilares</span>
+            Nossos <span className="text-[#ff4000d5]">pilares</span>
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
             Nossa metodologia é baseada em quatro pilares fundamentais que guiam
