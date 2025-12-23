@@ -64,7 +64,7 @@ const Navbar = () => {
             ))}
 
             {!isHome && (
-              <Button asChild size="lg" variant="outline">
+              <Button asChild size="default" variant="outline">
                 <a href="/">Início</a>
               </Button>
             )}
