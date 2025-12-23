@@ -38,7 +38,7 @@ const Navbar = () => {
         scrolled ? "shadow-md" : ""
       }`}
     >
-      <div className="container mx-auto px-4">
+      <div className="container mx-auto max-w-6xl px-4">
         <div className="flex h-16 items-center justify-between">
           {/* Logo */}
           <a href="/" className="group flex items-center">
